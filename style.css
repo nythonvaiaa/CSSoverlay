@@ -1,0 +1,49 @@
+.container{
+    position: relative;
+    width: 50%;
+}
+.overlay{
+    position: absolute;
+    background-color: black;
+    width: 328px;
+    bottom: 100%;
+    opacity: .8;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+    height: 0;
+    transition: .5s ease;
+}
+img{
+    width: 328px;
+    height: 335px;
+    display: block;
+}
+.container:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+.text{
+    position: absolute;
+    overflow: hidden;
+    top: 48%;
+    left: 34%;
+    color: white;
+    background-color: rgb(4, 111, 135);
+    width: 80px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: .8;
+}
+.text a{
+    color: black;
+    text-decoration: none;
+    transition: .8;
+}
+.text:hover{
+    background-color:  rgb(50, 176, 204);
+}
+.text:hover a{
+    color: white;
+}
